@@ -1,1 +1,9 @@
+Network: "got-responded" check for LLMNR/NBT-NS spoofing
+        > ipconfig /all | Select-String "NetBIOS" #NBT-NS check
+        > Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DNSClient" -Name "EnableMulticast" #LLMNR check
+
+
+
+
+
 
